@@ -25,7 +25,7 @@ RUN apt-get update && \
 WORKDIR /root
 
 # Install Chipyard and run ubuntu-req.sh to install necessary dependencies
-RUN git clone https://github.com/ucb-bar/chipyard.git && \
+RUN git clone git@github.com:rthelionheart24/chipyard.git && \
         cd chipyard && \
         git checkout $CHIPYARD_HASH
 
